@@ -1,0 +1,57 @@
+{
+  "competition": "TCRA Digital Clubs Hackathon",
+  "solution": "AI-Powered Delivery Intelligence System",
+  "model_name": "LightGBM",
+  "model_performance": {
+    "MAE": 88.60343962357625,
+    "RMSE": 156.9500018739457,
+    "R2": 0.1137562364075938
+  },
+  "feature_columns": [
+    "poi_lng",
+    "poi_lat",
+    "receipt_lng",
+    "receipt_lat",
+    "sign_lng",
+    "sign_lat",
+    "receipt_hour",
+    "receipt_day_of_week",
+    "receipt_month",
+    "receipt_day",
+    "delivery_distance_km",
+    "pickup_distance_km",
+    "is_weekend",
+    "is_peak_hour",
+    "city_encoded",
+    "type_encoded"
+  ],
+  "anomaly_features": [
+    "delivery_time_minutes",
+    "delivery_distance_km",
+    "pickup_distance_km",
+    "average_speed_kmh",
+    "receipt_hour",
+    "receipt_day_of_week"
+  ],
+  "dataset_stats": {
+    "total_records": 469327,
+    "training_size": 371335,
+    "test_size": 92834,
+    "cities": [
+      "Mbeya",
+      "Dar es Salaam",
+      "Mwanza",
+      "Arusha",
+      "Dodoma"
+    ],
+    "avg_delivery_time": 177.89809450553665,
+    "total_anomalies": 23467,
+    "anomaly_rate": 5.000138496187093
+  },
+  "deployment_info": {
+    "status": "production_ready",
+    "api_compatible": true,
+    "timestamp": "2025-09-09T22:26:44.716673",
+    "version": "1.0.0"
+  }
+}
